@@ -8,7 +8,6 @@ const ProductionPage = (props) =>{
     let [knowledgeState, setKnowledgeState] = useState(props.knowledge);
     let [mutagenState, setMutagenState] = useState(props.mutagens);
     if(props.visible){
-        console.log(unitState);
         return(
             <div id="production">
                 <h1>Units: {unitState}</h1>

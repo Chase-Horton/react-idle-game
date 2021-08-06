@@ -5,6 +5,9 @@ const BuildingsPage = ({visible, buildings, sendBuilding}) => {
   //get only unlocked buildings here IMPORTANT
   let unlocked_buildings = buildings;
 
+  //////////////////////////////////////////////////////
+  //INSTEAD of sending up, pass down state action from app and see if 
+  //it's easier. Hopefully we can do that instead
   function sendUpBuildingAction(id, amt){
     sendBuilding(id, amt);
   }
