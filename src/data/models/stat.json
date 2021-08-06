@@ -1,0 +1,8 @@
+{
+    "stats":{
+        "startCap": "starting cap on buildings, i.e. 5 (would result in buildings being 0/5)",
+        "requirements": "array of requirement objects used to tell what is needed to unlock, see requirements.json model",
+        "produces": "array of producer objects used to tell what is produced, see producer.json model",
+        "storage": "array of storage objects used to tell impact machine has on storage, see requirements.json model, i.e"
+    }
+}

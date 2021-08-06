@@ -5,9 +5,10 @@
 //combination, must have amounts of items as described by amounts and items
 //resource, must have amount of resources >= type
 //buildingType, have certain amount of buildings of a type ?
-
+//unlockType type of thing unlocked, mostly used for achievement
 class Requirement {
-  constructor(type, amounts, items) {
+  constructor(unlockType, type, amounts, items) {
+    this.unlockType = unlockType;
     this.type = type;
     this.amounts = amounts;
     this.items = items;

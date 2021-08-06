@@ -1,0 +1,18 @@
+{
+    "buildings": [
+      {
+        "name": "name of building, i.e. Warehouse",
+        "icon": "font awesome icon of building, i.e. fas fa-warehouse",
+        "startingCost": {
+          "resources": "array of resources it costs to build tree, should be a RESOURCE_NAME with a corresponding resource loaded into game.resources or it will result in error, i.e ['wood'], or ['wood','stone']",
+          "costs": "[500]"
+        },
+        "stats":{
+            "startCap": "starting cap on buildings, i.e. 5 (would result in buildings being 0/5)",
+            "requirements": "array of requirement objects used to tell what is needed to unlock, see requirements.json model",
+            "produces": "array of producer objects used to tell what is produced, see producer.json model",
+            "storage": "array of storage objects used to tell impact machine has on storage, see requirements.json model, i.e"
+        }
+      }
+    ]
+}

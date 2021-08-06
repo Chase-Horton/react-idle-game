@@ -4,6 +4,7 @@
       "name": "Barn",
       "icon": "fas fa-warehouse",
       "startCap": 5,
+      "currentAmt":0,
       "stats": "Increases Wood storage by 50%",
       "startingCost": {
         "resources": ["wood"],
@@ -21,6 +22,7 @@
       "name": "Farm",
       "icon": "fas fa-tractor",
       "startCap": 5,
+      "currentAmt":0,
       "stats": "Produces 2 food/sec",
       "startingCost": {
         "resources": ["wood"],
@@ -39,9 +41,10 @@
       "storage": null
     },
     {
-      "name": "Farm",
-      "icon": "fas fa-human",
-      "startCap": 5,
+      "name": "Spaceship",
+      "icon": "fas fa-rocket",
+      "startCap": 10,
+      "currentAmt":0,
       "stats": "Produces 2 food/sec",
       "startingCost": {
         "resources": ["wood"],

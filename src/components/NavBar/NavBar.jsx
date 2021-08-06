@@ -7,6 +7,10 @@ class NavBar extends React.Component {
     this.tabs = [
       { name: "tab-button-jobs", text: "Jobs/Units" },
       { name: "tab-button-buildings", text: "Buildings" },
+      {
+        name: "tab-button-production",
+        text: "Production"
+      },
       { name: "tab-button-science", text: "Science", extraClass: "tab-locked" },
       {
         name: "tab-button-territory",

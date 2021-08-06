@@ -1,5 +1,4 @@
 class Game {
-  //add logic to see if save exists and load that save instead
   constructor(json) {
     //Check if user has played before, if they have not set first played
     //And set this.tutorial to true to trigger tutorial after game setup

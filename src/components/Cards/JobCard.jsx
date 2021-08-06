@@ -16,10 +16,10 @@ class JobCard extends React.Component {
         id={["job-card-", this.name].join("")}
         className="ml-8 w-56 flex flex-col"
       >
-        <div className="flex justify-center px-3 align-middle py-4 rounded-t font-center px-3 py-1 bg-gray-300 text-gray-800 shadow-lg border-b-2 border-gray-400 ">
+        <div className="flex justify-center align-middle py-4 rounded-t font-center px-3 bg-gray-300 text-gray-800 shadow-lg border-b-2 border-gray-400 ">
           <i className={["text-6xl", this.icon].join(" ")}></i>
         </div>
-        <div className="flex inline-flex w-56">
+        <div className="inline-flex w-56">
           <button className="w-1/5 align-middle border-r-2 border-gray-400 pb-2 rounded-bl font-bold font-center px-3 py-1 bg-gray-300 hover:bg-gray-400 text-gray-800 shadow-lg">
             -
           </button>
