@@ -1,0 +1,63 @@
+{
+  "buildings": [
+    {
+      "name": "Barn",
+      "icon": "fas fa-warehouse",
+      "startCap": 5,
+      "stats": "Increases Wood storage by 50%",
+      "startingCost": {
+        "resources": ["wood"],
+        "costs": [500]
+      },
+      "requirements": null,
+      "produces": null,
+      "storage": {
+        "resources": ["wood"],
+        "operator": ["*"],
+        "factor": [0.5]
+      }
+    },
+    {
+      "name": "Farm",
+      "icon": "fas fa-tractor",
+      "startCap": 5,
+      "stats": "Produces 2 food/sec",
+      "startingCost": {
+        "resources": ["wood"],
+        "costs": [750]
+      },
+      "requirements": {
+        "type": "building",
+        "amounts": [1],
+        "buildings": ["barn"]
+      },
+      "produces": {
+        "resources": ["food"],
+        "operator": ["+"],
+        "amounts": [2]
+      },
+      "storage": null
+    },
+    {
+      "name": "Farm",
+      "icon": "fas fa-human",
+      "startCap": 5,
+      "stats": "Produces 2 food/sec",
+      "startingCost": {
+        "resources": ["wood"],
+        "costs": [750]
+      },
+      "requirements": {
+        "type": "building",
+        "amounts": [1],
+        "buildings": ["barn"]
+      },
+      "produces": {
+        "resources": ["food"],
+        "operator": ["+"],
+        "amounts": [2]
+      },
+      "storage": null
+    }
+  ]
+}

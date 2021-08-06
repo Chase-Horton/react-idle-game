@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  background-color: #826251;
+}
+.tab {
+  transition-duration: 0.5s;
+  background-color: transparent;
+  color: rgb(29, 78, 216);
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-width: 1px;
+  border-color: rgb(59, 130, 246);
+  border-radius: 0.25rem;
+}
+.tab:hover {
+  background-color: rgb(59, 130, 246);
+  color: white;
+  border-color: rgba(59, 130, 246, 0);
+}
+.tab-active:hover {
+  background-color: rgb(59, 130, 246);
+}
+.tab-active {
+  background-color: rgb(59, 130, 246);
+  color: white;
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-width: 1px;
+  border-color: rgba(59, 130, 246, 0);
+  border-radius: 0.25rem;
+}
+.tab-unlock {
+  background-color: transparent;
+  color: #2ecc71;
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-width: 1px;
+  border-color: #25dd72;
+  border-radius: 0.25rem;
+  animation: unlock-blink-animation 5s infinite;
+}
+.tab-unlock:hover {
+  background-color: #2ecc71;
+  color: white;
+  border-color: transparent;
+  animation: none;
+}
+@keyframes unlock-blink-animation {
+  0% {
+    background-color: #80e7ab;
+    color: #16be5c;
+    border-color: #80e7ab;
+  }
+
+  50% {
+    background-color: #2ecc71;
+    color: white;
+    border-color: transparent;
+  }
+
+  100% {
+    background-color: #80e7ab;
+    color: #16be5c;
+    border-color: #80e7ab;
+  }
+}
+.tab-locked {
+  background-color: rgba(59, 131, 246, 0.5);
+  color: white;
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-width: 1px;
+  border-color: rgba(59, 130, 246, 0);
+  border-radius: 0.25rem;
+  cursor: not-allowed;
+}
+.tab-locked:hover {
+  background-color: rgba(59, 131, 246, 0.5);
+}

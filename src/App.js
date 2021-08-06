@@ -1,22 +1,37 @@
-import {BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch} from 'react-router-dom';
+import { useState } from "react";
+import "./css/styles.css";
 
-import JobsPage from './pages/Jobs/JobsPage';
-import BuildingsPage from './pages/Buildings/BuildingsPage';
-import TerritoryPage from './pages/Territory/TerritoryPage';
-import MutationsPage from './pages/Mutations/MutationsPage';
-import ProductionPage from './pages/Production/ProductionPage';
-import SciencePage from './pages/Science/SciencePage';
-import Navbar from './components/Navbar/Navbar';
+import Game from "./api/Game.js";
 
-const App = () => {
-  return(
-    <>
-      <Navbar />
-    </>
-  )
+import NavBar from "./components/NavBar/NavBar.jsx";
+import JobPage from "./pages/JobPage.jsx";
+import BuildingsPage from "./pages/BuildingsPage.jsx";
+import SciencePage from "./pages/SciencePage.jsx";
+import TerritoryPage from "./pages/TerritoryPage.jsx";
+import MutationPage from "./pages/MutationPage.jsx";
+
+export default function App() {
+  //Called when navbar
+  const [pageState, setPageState] = useState("jobs");
+  const changePage = (page) => {
+    setPageState(page);
+  };
+  if (false) {
+    //load save
+  } else {
+    let game = new Game(require("./data/default_game.json"));
+  }
+  return (
+    <div className="App h-screen w-screen">
+      <NavBar changePage={changePage} />
+      <JobPage visible={pageState === "jobs"} />
+      <BuildingsPage
+        visible={pageState === "buildings"}
+        buildings={require("./data/buildings.json").buildings}
+      />
+      <SciencePage visible={pageState === "science"} />
+      <TerritoryPage visible={pageState === "territory"} />
+      <MutationPage visible={pageState === "mutations"} />
+    </div>
+  );
 }
-
-export default App;

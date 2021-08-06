@@ -1,0 +1,13 @@
+{
+  "general": {
+    "first_played": null,
+    "stage": 0
+  },
+  "resources": {
+    "food": 250,
+    "water": 500,
+    "knowledge": 0,
+    "territory": 0,
+    "mutagens": 0
+  }
+}
